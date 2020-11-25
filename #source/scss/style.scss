@@ -1,0 +1,168 @@
+@import "nullstyle.scss";
+/* Styles for content */
+
+.background {
+	object-fit: cover;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+}
+.rules,
+.playground,
+.result {
+	position: absolute;
+}
+
+/* Styles for rules */
+#game-rules-registration {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rules {
+	width: 30%;
+	left: 40px;
+	top: 40px;
+	&__title,
+	&__rules-info {
+		margin: 0px 0px 10px 0px;
+		text-align: center;
+		color: white;
+		letter-spacing: 2.5px;
+	}
+	&__title {
+		font-size: 60px;
+		color: yellowgreen;
+	}
+	&__rules-info {
+		font-size: 30px;
+	}
+}
+.registration {
+	margin: 30px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.registration label,
+.registration input {
+	color: yellowgreen;
+}
+.registration label,
+.registration input {
+	margin: 0px 0px 10px 0px;
+}
+.registration label {
+	font-size: 30px;
+}
+#registration-name,
+#registration-button {
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+}
+#registration-name {
+	width: 50%;
+}
+#registration-button {
+	width: 30%;
+	background-color: yellowgreen;
+	color: white;
+}
+
+/* Syles for game */
+
+.playground {
+	left: 0;
+	top: 0;
+	width: 100%;
+	&__heading {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 20px 0px 0px 0px;
+		height: 10vh;
+	}
+	&__heading p,
+	&__heading p span {
+		color: black;
+		font-size: 25px;
+		text-align: center;
+	}
+	&__body {
+		height: 90vh;
+		position: relative;
+		padding: 50px;
+	}
+}
+
+/* Syles for game-result */
+#game-result {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.result {
+	text-align: start;
+	border: 1px solid white;
+	padding: 20px;
+	position: absolute;
+	left: 40%;
+	top: 35%;
+	&__title,
+	&__item,
+	&__button {
+		color: white;
+		margin: 10px 10px 10px 10px;
+		letter-spacing: 2px;
+	}
+	&__title {
+		font-size: 40px;
+	}
+	&__item,
+	&__button {
+		font-size: 25px;
+	}
+	&__button {
+		background-color: gray;
+		padding: 5px;
+		border-radius: 5px;
+	}
+}
+
+//items to add
+
+.facebook,
+.instagram,
+.linkedIn,
+.skype,
+.twitter,
+.youtube {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.facebook {
+	background-image: url("../images/socials/facebook.png");
+}
+.instagram {
+	background-image: url("../images/socials/instagram.png");
+}
+.linkedIn {
+	background-image: url("../images/socials/linkedIn.png");
+}
+.skype {
+	background-image: url("../images/socials/skype.png");
+}
+.twitter {
+	background-image: url("../images/socials/twitter.png");
+}
+.youtube {
+	background-image: url("../images/socials/youtube.png");
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Game</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div id="content">
+
+		<div id="game-rules-registration">
+			<img class="background" src="images/background/game-rules-bg.jpg" alt="background">
+			<div class="rules">
+				<p class="rules__title">Kill your socials. <br> The Game.</p>
+				<p class="rules__rules-info">You'll get 60 sec for game.
+					In game you should shoot social icons. Smallest icon costs the most, 3 point.
+					The medium icon costs 2 point and the bigest one is cost 1 point.
+					Missing delete 1 point from score. Good luck and have fun! </p>
+				<form class="registration" onsubmit="game.startGame(); return false">
+					<label for="name"> Your name:</label>
+					<input type="text" value="" name="name" id="registration-name" required>
+					<button type="submit" id="registration-button">Start the game!</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="game">
+			<img class="background" src="images/background/game-bg.jpg" alt="background">
+			<div class="playground">
+				<div class="playground__heading">
+					<p>Time: <span id="timer"></span></p>
+					<p>Your hits: <span id="hit-counter">0</span></p>
+					<p>Your misses: <span id="miss-counter">0</span></p>
+					<p>Total score: <span id="total-score-counter">0</span></p>
+				</div>
+				<div class="playground__body" id="play-body"></div>
+			</div>
+		</div>
+
+		<div id="game-result">
+			<img class="background" src="images/background/game-results.jpg" alt="background">
+			<div class="result">
+				<p class="result__title" id="result-score">Your score:</p>
+				<p class="result__item" id="result-username">Your name:</p>
+				<p class="result__item" id="result-hits">Your hits:</p>
+				<p class="result__item" id="result-misses">Your misses:</p>
+				<button class="result__button" type="button" id="restar-button" onclick="game.restartGame()">Restart it
+					now!</button>
+				<button class="result__button" type="submit" id="end-game">End game</button>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jQuery.js"></script> -->
+
+	<!-- <script src="js/es5.js"></script> -->
+
+	<script src="js/es6.js"></script>
+</body>
+
+</html>
